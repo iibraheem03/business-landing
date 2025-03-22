@@ -1,0 +1,206 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f1de;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #e07a5fe6;
+    border-bottom: 1px solid #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1.5rem;
+}
+
+.header-section {
+    background: linear-gradient(135deg, #e07a5f, #0066ccd9);
+    color: #fefefe;
+    padding: 100px 20px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.header-section h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.header-section h2 {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header a:hover {
+    background-color: #f4f1de80;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 20px;
+    background: linear-gradient(135deg, #e07a5f, #0066ccd9);
+    color: white;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+}
+
+footer nav {
+    margin: 15px 0;
+}
+
+footer .contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer .contact-info div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer a {
+    color: #ffffff;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f8410e;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 8px 0;
+    }
+
+    header nav {
+        gap: 5px;
+    }
+
+    header a {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
+
+    .header-section {
+        padding: 60px 20px;
+    }
+
+    .header-section h1 {
+        font-size: 2.5rem;
+        padding: 0 15px;
+    }
+
+    .header-section h2 {
+        font-size: 1.4rem;
+        padding: 0 20px;
+    }
+
+    footer .contact-info {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .header-section {
+        padding: 40px 15px;
+    }
+
+    .header-section h1 {
+        font-size: 2rem;
+    }
+
+    .header-section h2 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        padding: 12px;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    footer .contact-info {
+        gap: 12px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+/* Add touch-friendly hover states for mobile */
+@media (hover: none) {
+    header a:hover {
+        background-color: transparent;
+    }
+
+    footer a:hover {
+        color: #ffffff;
+    }
+}
